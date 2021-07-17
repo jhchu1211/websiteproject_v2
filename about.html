@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Page Title
+        </title>
+        <meta name="viewport" content="width=device-width, initical-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img class="resize" src="testImages/Logos/indigoLogo.png">
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-close" onClick="closeMenu()"></i>
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="about.html"><li>ABOUT</li></a>
+                        <a href="#"><li>NEW PAGE</li></a>
+                    </ul>
+                    <button type="button" class="btnBig">Button</button>
+                    <div class="spacer"></div>
+                    <div class="menu-social">
+                        <i class="fa fa-facebook" onClick="sendFacebook()"></i>
+                        <i class="fa fa-instagram" onClick="sendInstagram()"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+                <i class="fa fa-bars" onClick="showMenu(),_blank"></i>
+            </div>
+            <div class="banner-title">
+                <h1>Title: Come <br> and get your <br> one <span>puppy</span></h1>
+                <button type="button" class="btnSmall">Button</button>
+            </div>
+            <div class="vertical-bar">
+                <div class="search-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="vertical-spacer"></div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook" onClick="sendFacebook()"></i>
+                    <i class="fa fa-instagram" onClick="sendInstagram()"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+            <div class="notifications">
+                <div class="contents">
+                    <small>Thank you for looking at my website</small>
+                    <p><a href="https://www.youtube.com/watch?v=RfeVPxdSwaM" target="_blank">Subskrool</a><a href="https://www.youtube.com/watch?v=GPUgjy-Pn-4" target="_blank">Buffoon</a></p>
+                </div>
+                <div class="notification-img">
+                    <img class="resize" src="testImages/Logos/greenLogo.png">
+                </div>
+            </div>
+        </div>
+        <script>
+            var show = document.getElementById("nav-links","social-icons")
+            function showMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+            function sendFacebook(){
+                window.open("https://www.facebook.com/johnny.chu.790","_blank");
+            }
+            function sendInstagram(){
+                window.open("https://www.instagram.com/jyon_nee/","_blank");
+            }
+        </script>
+    </body>
+</html>
